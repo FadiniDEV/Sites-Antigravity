@@ -1,0 +1,172 @@
+/* custom-responsive.css */
+
+/* =========================================
+   1. GLOBAL OVERFLOW & RESPONSIVENESS
+========================================= */
+body {
+  overflow-x: hidden;
+}
+
+
+/* Prevent fixed-width overflows on mobile */
+@media (max-width: 639px) {
+  /* Some classes might have fixed widths like w-[500px] or max-w-[280px], we force them to be fluid */
+  .w-\\[500px\\], .w-\\[400px\\] {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+/* =========================================
+   2. TYPOGRAPHY TWEAKS (TABLET / MOBILE)
+========================================= */
+@media (max-width: 767px) {
+  h1 {
+    font-size: clamp(2rem, 8vw, 2.5rem) !important;
+    line-height: 1.15 !important;
+  }
+  h2 {
+    font-size: clamp(1.75rem, 6vw, 2.25rem) !important;
+    line-height: 1.25 !important;
+  }
+}
+
+/* =========================================
+   3. HEADER FIXES
+========================================= */
+@media (max-width: 414px) {
+  /* Prevent the topbar address from overflowing if it's too long */
+  .max-w-\\[280px\\] {
+    max-width: 180px !important;
+  }
+  
+  /* Logo adaptation for tiny screens */
+  header img.object-contain {
+    max-height: 32px !important;
+  }
+}
+
+/* =========================================
+   4. BLOG POST READING EXPERIENCE
+========================================= */
+#blog-post-content {
+  width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+@media (max-width: 767px) {
+  /* Ensure paragraph text is fully readable */
+  #blog-post-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+  }
+  #blog-post-content h3 {
+    font-size: 1.35rem;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+  }
+  #blog-post-content ul {
+    padding-left: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+  #blog-post-content li {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* =========================================
+   5. POST PAGE SPACING FIX
+========================================= */
+/* Calculate header height roughly:
+   Mobile: ~60px
+   Tablet: ~80px
+   Desktop: ~120px (with top bar)
+*/
+.post-page {
+  padding-top: 80px; /* Safe clearing for mobile header */
+}
+
+@media (min-width: 640px) {
+  .post-page {
+    padding-top: 100px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .post-page {
+    padding-top: 130px; /* Safe clearing for desktop header with topbar */
+  }
+}
+
+/* =========================================
+   6. FOOTER STACKING
+========================================= */
+@media (max-width: 639px) {
+  footer .grid {
+    gap: 2rem !important;
+  }
+  
+  /* Ensure logo in footer is proportioned correctly */
+  footer img {
+    max-height: 36px !important;
+  }
+}
+
+/* =========================================
+   6. ELEGANT WHATSAPP BUTTON
+========================================= */
+.whatsapp-floating-btn {
+  position: fixed;
+  z-index: 50; 
+  /* Removing Tailwind bounce animation via important if needed, but we will remove the class anyway */
+  animation: none !important;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* The glow pseudo-element */
+.whatsapp-floating-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background-color: #25D366;
+  z-index: -1;
+  animation: pulse-glow 2.5s infinite cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes pulse-glow {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  60% {
+    transform: scale(1.45);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+/* Hover state on desktop */
+@media (hover: hover) {
+  .whatsapp-floating-btn:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 15px 30px -5px rgba(37, 211, 102, 0.4), 0 8px 15px -6px rgba(37, 211, 102, 0.2) !important;
+  }
+  /* Pause the glow when hovering */
+  .whatsapp-floating-btn:hover::before {
+    animation-play-state: paused;
+    opacity: 0;
+  }
+}
+
+/* Active state on mobile */
+.whatsapp-floating-btn:active {
+  transform: scale(0.95);
+}

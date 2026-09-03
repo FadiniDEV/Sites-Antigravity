@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog | Lifema Seguros</title>
+  <meta name="description" content="Artigo do blog da Lifema Seguros.">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/custom-responsive.css">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap">
+  
+  <style>
+    /* Styling for generated HTML content */
+    .blog-content-body h2 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #E2DDD5; /* cream */
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+    
+    @media (min-width: 640px) {
+      .blog-content-body h2 {
+        font-size: 1.875rem;
+      }
+    }
+    
+    .blog-content-body h3 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #E2DDD5;
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+    
+    .blog-content-body p {
+      margin-bottom: 1.25rem;
+      line-height: 1.75;
+      color: #94A3B8; /* slate */
+    }
+    
+    .blog-content-body ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+      margin-bottom: 1.5rem;
+      color: #94A3B8;
+    }
+    
+    .blog-content-body li {
+      margin-bottom: 0.5rem;
+    }
+    
+    .blog-content-body strong {
+      color: #E2DDD5;
+      font-weight: 600;
+    }
+    
+    .blog-content-body a {
+      color: #CAA862; /* gold */
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+    
+    .blog-content-body a:hover {
+      color: #d8ba78; /* gold-light */
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-navy text-cream flex flex-col overflow-x-hidden w-full max-w-full">
+  
+  <!-- HEADER -->
+  <header id="main-header" class="fixed inset-x-0 top-0 z-50 w-full transition-all duration-300 bg-navy/95 backdrop-blur-md border-b border-white/10 shadow-lg">
+    <!-- top bar -->
+    <div class="hidden border-b border-white/5 bg-navy-light/60 md:block">
+      <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-1.5 text-xs text-slate">
+        <div class="flex flex-wrap items-center gap-4 lg:gap-6">
+          <a href="https://maps.google.com/?q=Av.+Exemplo,+000+-+Centro,+Campinas+-+SP" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 transition-colors hover:text-gold">
+            <i data-lucide="map-pin" class="h-3.5 w-3.5 shrink-0 text-gold"></i>
+            <span class="truncate max-w-[280px] lg:max-w-none">Av. Exemplo, 000 - Centro, Campinas - SP</span>
+          </a>
+          <a href="tel:00000000000" class="flex items-center gap-1.5 transition-colors hover:text-gold">
+            <i data-lucide="phone" class="h-3.5 w-3.5 shrink-0 text-gold"></i>
+            <span>(00) 00000-0000</span>
+          </a>
+          <a href="mailto:adriano@lifemaseguros.com.br" class="flex items-center gap-1.5 transition-colors hover:text-gold">
+            <i data-lucide="mail" class="h-3.5 w-3.5 shrink-0 text-gold"></i>
+            <span class="hidden xl:inline">adriano@lifemaseguros.com.br</span>
+            <span class="xl:hidden">E-mail</span>
+          </a>
+        </div>
+        <div class="flex items-center gap-4">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="transition-colors hover:text-gold">Instagram</a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="transition-colors hover:text-gold">Facebook</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- main nav -->
+    <div class="mx-auto flex w-full max-w-7xl items-center justify-between px-4 py-3 sm:py-4">
+      <a href="index.html" class="flex items-center gap-2.5 sm:gap-3 shrink-0 js-nav-link">
+        <img src="assets/lifema-logo.png" alt="Lifema Seguros" class="h-8 sm:h-10 lg:h-12 w-auto object-contain" />
+        <span class="font-display text-sm font-bold text-cream sm:text-base lg:text-lg">Lifema Seguros</span>
+      </a>
+
+      <!-- desktop menu -->
+      <nav class="hidden items-center gap-0.5 lg:flex xl:gap-1.5">
+        <a href="index.html#inicio" class="js-nav-link js-nav-item relative px-2.5 py-2 text-xs font-medium transition-colors xl:px-4 xl:text-sm text-cream/80 hover:text-cream">
+          Início
+        </a>
+        <a href="index.html#sobre" class="js-nav-link js-nav-item relative px-2.5 py-2 text-xs font-medium transition-colors xl:px-4 xl:text-sm text-cream/80 hover:text-cream">
+          Sobre Nós
+        </a>
+        <a href="index.html#seguros" class="js-nav-link js-nav-item relative px-2.5 py-2 text-xs font-medium transition-colors xl:px-4 xl:text-sm text-cream/80 hover:text-cream">
+          Seguros
+        </a>
+        <a href="index.html#beneficios" class="js-nav-link js-nav-item relative px-2.5 py-2 text-xs font-medium transition-colors xl:px-4 xl:text-sm text-cream/80 hover:text-cream">
+          Benefícios
+        </a>
+        <a href="blog.html" class="relative px-2.5 py-2 text-xs font-medium transition-colors xl:px-4 xl:text-sm text-gold">
+          Blog
+          <span class="absolute bottom-0 left-1/2 h-0.5 w-5 -translate-x-1/2 rounded-full bg-gold"></span>
+        </a>
+        <a href="index.html#contato" class="js-nav-link js-nav-item relative px-2.5 py-2 text-xs font-medium transition-colors xl:px-4 xl:text-sm text-cream/80 hover:text-cream">
+          Contato
+        </a>
+      </nav>
+
+      <div class="hidden items-center gap-4 lg:flex">
+        <a href="index.html#contato" class="js-nav-link inline-flex items-center justify-center rounded-lg bg-gold px-4 py-2 text-xs font-semibold text-navy shadow-md shadow-gold/20 transition-all hover:bg-gold-light hover:shadow-gold/40 xl:px-5 xl:py-2.5 xl:text-sm">
+          Solicitar Cotação
+        </a>
+      </div>
+
+      <!-- mobile toggle -->
+      <button type="button" id="mobile-menu-btn" class="inline-flex items-center justify-center rounded-lg p-2 text-cream lg:hidden focus:outline-none shrink-0" aria-label="Abrir menu">
+        <i data-lucide="menu" class="h-6 w-6" id="menu-icon-open"></i>
+        <i data-lucide="x" class="h-6 w-6 hidden" id="menu-icon-close"></i>
+      </button>
+    </div>
+
+    <!-- backdrop when open -->
+    <div id="mobile-menu-backdrop" class="fixed inset-0 top-[56px] sm:top-[68px] z-30 bg-black/60 backdrop-blur-sm lg:hidden hidden"></div>
+
+    <!-- mobile drawer -->
+    <div id="mobile-menu-drawer" class="absolute inset-x-0 top-full z-40 max-h-[calc(100dvh-4.5rem)] overflow-y-auto border-t border-white/10 bg-navy-light/98 shadow-2xl transition-all duration-300 lg:hidden pointer-events-none opacity-0 -translate-y-2 invisible">
+      <nav class="flex flex-col px-4 py-4 space-y-1">
+        <a href="index.html#inicio" class="js-nav-link flex items-center min-h-[44px] rounded-lg px-3 py-2 text-base font-medium transition-colors border-b border-white/5 text-cream/80 hover:text-cream hover:bg-white/5">Início</a>
+        <a href="index.html#sobre" class="js-nav-link flex items-center min-h-[44px] rounded-lg px-3 py-2 text-base font-medium transition-colors border-b border-white/5 text-cream/80 hover:text-cream hover:bg-white/5">Sobre Nós</a>
+        <a href="index.html#seguros" class="js-nav-link flex items-center min-h-[44px] rounded-lg px-3 py-2 text-base font-medium transition-colors border-b border-white/5 text-cream/80 hover:text-cream hover:bg-white/5">Seguros</a>
+        <a href="index.html#beneficios" class="js-nav-link flex items-center min-h-[44px] rounded-lg px-3 py-2 text-base font-medium transition-colors border-b border-white/5 text-cream/80 hover:text-cream hover:bg-white/5">Benefícios</a>
+        <a href="blog.html" class="flex items-center min-h-[44px] rounded-lg px-3 py-2 text-base font-medium transition-colors border-b border-white/5 text-gold bg-white/5">Blog</a>
+        <a href="index.html#contato" class="js-nav-link flex items-center min-h-[44px] rounded-lg px-3 py-2 text-base font-medium transition-colors border-b border-white/5 text-cream/80 hover:text-cream hover:bg-white/5">Contato</a>
+        <div class="pt-2">
+          <a href="index.html#contato" class="js-nav-link inline-flex min-h-[44px] w-full items-center justify-center rounded-lg bg-gold px-4 py-3 text-sm font-semibold text-navy shadow-md shadow-gold/20">Solicitar Cotação</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- POST NOT FOUND STATE -->
+  <main id="post-not-found" class="flex-1 mt-24 sm:mt-28 lg:mt-32 w-full max-w-full hidden">
+    <div class="flex flex-col items-center justify-center py-20 px-4 text-center">
+      <i data-lucide="file-question" class="h-16 w-16 text-slate/50 mb-6"></i>
+      <h1 class="font-display text-2xl sm:text-3xl font-bold text-cream">Post não encontrado</h1>
+      <p class="mt-4 text-slate max-w-md mx-auto">Não conseguimos encontrar o artigo que você está procurando. Ele pode ter sido movido ou excluído.</p>
+      <a href="blog.html" class="mt-8 inline-flex items-center gap-2 rounded-lg bg-gold px-6 py-3 text-sm font-semibold text-navy transition-all hover:bg-gold-light">
+        <i data-lucide="arrow-left" class="h-4 w-4"></i>
+        Voltar para o Blog
+      </a>
+    </div>
+  </main>
+
+  <!-- POST LOADING STATE -->
+  <main id="post-loading" class="flex-1 mt-24 sm:mt-28 lg:mt-32 w-full max-w-full">
+    <div class="flex flex-col items-center justify-center py-20 px-4">
+      <i data-lucide="loader-2" class="h-10 w-10 text-gold animate-spin"></i>
+      <p class="mt-4 text-slate">Carregando artigo...</p>
+    </div>
+  </main>
+
+  <!-- POST CONTENT -->
+  <main id="post-content" class="flex-1 w-full max-w-full hidden post-page">
+    <article class="mx-auto max-w-4xl px-4 py-8 sm:py-12 pb-16 sm:pb-24">
+      <!-- Back Link -->
+      <a href="blog.html" class="mb-6 sm:mb-8 inline-flex items-center gap-2 text-xs sm:text-sm font-semibold text-gold transition-colors hover:text-gold-light">
+        <i data-lucide="arrow-left" class="h-4 w-4"></i>
+        Voltar para o Blog
+      </a>
+
+      <!-- Post Header -->
+      <header class="mb-8 sm:mb-10">
+        <div class="mb-3 sm:mb-4 flex flex-wrap items-center gap-2.5 sm:gap-3">
+          <span id="post-category" class="rounded-full bg-gold px-3 py-0.5 sm:px-3.5 sm:py-1 text-xs font-bold text-navy"></span>
+          <span class="flex items-center gap-1.5 text-xs text-slate">
+            <i data-lucide="calendar" class="h-3.5 w-3.5 text-gold"></i>
+            <span id="post-date"></span>
+          </span>
+          <span class="flex items-center gap-1.5 text-xs text-slate">
+            <i data-lucide="clock" class="h-3.5 w-3.5 text-gold"></i>
+            <span id="post-readtime"></span>
+          </span>
+        </div>
+
+        <h1 id="post-title" class="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight text-cream text-balance"></h1>
+        <p id="post-excerpt" class="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl leading-relaxed text-slate"></p>
+
+        <!-- Author info -->
+        <div class="mt-6 sm:mt-8 flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-y border-white/10 py-3.5 sm:py-4">
+          <div class="flex items-center gap-3">
+            <div class="grid h-9 w-9 sm:h-10 sm:w-10 place-items-center rounded-full bg-gold/10 text-gold border border-gold/20">
+              <i data-lucide="user" class="h-4 w-4 sm:h-5 sm:w-5"></i>
+            </div>
+            <div>
+              <div id="post-author" class="text-xs sm:text-sm font-semibold text-cream"></div>
+              <div id="post-role" class="text-[11px] sm:text-xs text-slate"></div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Cover Image -->
+      <div class="mb-8 sm:mb-12 overflow-hidden rounded-2xl sm:rounded-3xl border border-white/10 bg-navy-light shadow-2xl">
+        <img id="post-cover" src="" alt="Capa do Artigo" class="h-auto w-full object-cover max-h-[480px]" />
+      </div>
+
+      <!-- Main Body -->
+      <div id="post-body" class="blog-content-body mt-8 sm:mt-12 px-2 sm:px-4 text-base sm:text-lg">
+        <!-- Injected via JS -->
+      </div>
+      
+      <!-- CTA Footer -->
+      <div class="mt-12 sm:mt-16 rounded-2xl border border-gold/20 bg-gradient-to-br from-navy-light to-navy p-6 sm:p-8 lg:p-10 text-center shadow-xl">
+        <div class="mx-auto grid h-12 w-12 sm:h-14 sm:w-14 place-items-center rounded-full bg-gold/10 text-gold mb-4 sm:mb-5">
+          <i data-lucide="shield-check" class="h-6 w-6 sm:h-7 sm:w-7"></i>
+        </div>
+        <h3 class="font-display text-xl sm:text-2xl font-bold text-cream mb-3">Precisa de proteção para o seu patrimônio?</h3>
+        <p class="text-sm sm:text-base text-slate mb-6 sm:mb-8 max-w-xl mx-auto">
+          Nossa equipe está pronta para analisar seu perfil e apresentar as melhores opções do mercado para você, sua família ou sua empresa.
+        </p>
+        <a href="index.html#contato" class="inline-flex w-full sm:w-auto items-center justify-center gap-2 rounded-lg bg-gold px-6 sm:px-8 py-3 sm:py-3.5 text-sm sm:text-base font-semibold text-navy transition-all hover:bg-gold-light shadow-lg shadow-gold/20">
+          Solicitar uma Cotação
+          <i data-lucide="arrow-right" class="h-4 w-4"></i>
+        </a>
+      </div>
+    </article>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="relative overflow-hidden border-t border-white/10 bg-navy-light">
+    <div class="mx-auto max-w-7xl px-4 py-12 sm:py-16 lg:py-20">
+      <div class="grid gap-8 sm:gap-10 sm:grid-cols-2 lg:grid-cols-4">
+        <!-- brand -->
+        <div class="sm:col-span-2 lg:col-span-1">
+          <a href="#inicio" class="inline-flex items-center gap-3">
+            <img src="assets/lifema-logo.png" alt="Lifema Seguros" class="h-10 sm:h-12 w-auto object-contain" />
+            <span class="font-display text-base sm:text-lg font-bold text-cream">Lifema Seguros</span>
+          </a>
+          <p class="mt-3 sm:mt-4 max-w-xs text-xs sm:text-sm leading-relaxed text-slate">
+            Corretora de seguros brasileira dedicada a proteger pessoas, famílias e empresas com soluções personalizadas.
+          </p>
+          <div class="mt-5 sm:mt-6 flex gap-3">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="grid h-9 w-9 place-items-center rounded-full border border-white/10 text-slate transition-colors hover:border-gold hover:text-gold" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="grid h-9 w-9 place-items-center rounded-full border border-white/10 text-slate transition-colors hover:border-gold hover:text-gold" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- quick links -->
+        <div>
+          <h4 class="mb-3 sm:mb-4 font-display text-sm sm:text-base font-bold text-cream">Links Rápidos</h4>
+          <ul class="space-y-2 sm:space-y-2.5">
+            <li><a href="index.html#inicio" class="text-xs sm:text-sm text-slate transition-colors hover:text-gold">Início</a></li>
+            <li><a href="index.html#sobre" class="text-xs sm:text-sm text-slate transition-colors hover:text-gold">Sobre Nós</a></li>
+            <li><a href="index.html#seguros" class="text-xs sm:text-sm text-slate transition-colors hover:text-gold">Seguros</a></li>
+            <li><a href="index.html#beneficios" class="text-xs sm:text-sm text-slate transition-colors hover:text-gold">Benefícios</a></li>
+            <li><a href="blog.html" class="text-xs sm:text-sm text-slate transition-colors hover:text-gold">Blog</a></li>
+            <li><a href="index.html#contato" class="text-xs sm:text-sm text-slate transition-colors hover:text-gold">Contato</a></li>
+          </ul>
+        </div>
+
+                <!-- insurance links -->
+        <div>
+          <h4 class="mb-3 sm:mb-4 font-display text-sm sm:text-base font-bold text-cream">Seguros</h4>
+          <ul class="space-y-2 sm:space-y-2.5">
+            <li><a href="blog-post.html?slug=como-escolher-um-seguro-auto-ideal-para-o-seu-perfil" class="text-xs sm:text-sm text-slate transition-colors hover:text-gold">Seguro Auto</a></li>
+            <li><a href="blog-post.html?slug=seguro-residencial-o-que-cobre-e-como-contratar" class="text-xs sm:text-sm text-slate transition-colors hover:text-gold">Seguro Residencial</a></li>
+            <li><a href="blog-post.html?slug=seguro-de-vida-quando-e-por-que-fazer" class="text-xs sm:text-sm text-slate transition-colors hover:text-gold">Seguro de Vida</a></li>
+            <li><a href="blog-post.html?slug=seguro-empresarial-proteja-seu-negocio-desde-o-inicio" class="text-xs sm:text-sm text-slate transition-colors hover:text-gold">Seguro Empresarial</a></li>
+            <li><a href="blog-post.html?slug=seguro-saude-como-escolher-o-melhor-plano-para-voce-e-sua-empresa" class="text-xs sm:text-sm text-slate transition-colors hover:text-gold">Seguro Saúde</a></li>
+            <li><a href="blog-post.html?slug=seguro-viagem-por-que-e-indispensavel-nas-suas-ferias-ou-trabalho" class="text-xs sm:text-sm text-slate transition-colors hover:text-gold">Seguro Viagem</a></li>
+          </ul>
+        </div>
+
+        <!-- contact -->
+        <div>
+          <h4 class="mb-3 sm:mb-4 font-display text-sm sm:text-base font-bold text-cream">Contato</h4>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-2.5 sm:gap-3 text-xs sm:text-sm text-slate">
+              <i data-lucide="phone" class="mt-0.5 h-4 w-4 shrink-0 text-gold"></i>
+              <a href="tel:00000000000" class="transition-colors hover:text-gold">(00) 00000-0000</a>
+            </li>
+            <li class="flex items-start gap-2.5 sm:gap-3 text-xs sm:text-sm text-slate">
+              <i data-lucide="mail" class="mt-0.5 h-4 w-4 shrink-0 text-gold"></i>
+              <a href="mailto:adriano@lifemaseguros.com.br" class="transition-colors hover:text-gold break-all font-medium">adriano@lifemaseguros.com.br</a>
+            </li>
+            <li class="flex items-start gap-2.5 sm:gap-3 text-xs sm:text-sm text-slate">
+              <i data-lucide="map-pin" class="mt-0.5 h-4 w-4 shrink-0 text-gold"></i>
+              <a href="https://maps.google.com/?q=Av.+Exemplo,+000+-+Centro,+Campinas+-+SP" target="_blank" rel="noopener noreferrer" class="transition-colors hover:text-gold">Av. Exemplo, 000 - Centro, Campinas - SP</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- bottom bar -->
+    <div class="border-t border-white/10 bg-navy">
+      <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 sm:gap-4 px-4 py-5 sm:py-6 sm:flex-row">
+        <p class="text-center text-xs text-slate sm:text-left">
+          © <span id="current-year"></span> Lifema Seguros. Todos os direitos reservados.
+        </p>
+        <div class="flex gap-4 sm:gap-6">
+          <button onclick="document.getElementById('privacy-modal').classList.remove('hidden')" class="text-xs text-slate transition-colors hover:text-gold">Política de Privacidade</button>
+          <button onclick="document.getElementById('terms-modal').classList.remove('hidden')" class="text-xs text-slate transition-colors hover:text-gold">Termos de Uso</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20uma%20cota%C3%A7%C3%A3o%20de%20seguro." target="_blank" rel="noopener noreferrer" class="fixed bottom-5 right-5 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg shadow-black/20 transition-all hover:-translate-y-1 hover:shadow-xl hover:shadow-[#25D366]/30 focus:outline-none focus:ring-4 focus:ring-[#25D366]/50 sm:bottom-6 sm:right-6 lg:h-16 lg:w-16 whatsapp-floating-btn" aria-label="Fale conosco no WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-7 w-7 lg:h-8 lg:w-8"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"/><path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"/></svg>
+  </a>
+
+  <!-- Modals -->
+  <!-- Privacy Modal -->
+  <div id="privacy-modal" class="fixed inset-0 z-50 flex items-center justify-center px-4 hidden">
+    <div class="fixed inset-0 bg-black/80 backdrop-blur-sm" onclick="this.parentElement.classList.add('hidden')"></div>
+    <div class="relative w-full max-w-2xl max-h-[85vh] overflow-y-auto rounded-xl border border-white/10 bg-navy-light shadow-2xl">
+      <div class="sticky top-0 z-10 flex items-center justify-between border-b border-white/10 bg-navy-light/90 px-5 py-4 backdrop-blur-md">
+        <h2 class="font-display text-lg font-bold text-cream">Política de Privacidade</h2>
+        <button onclick="document.getElementById('privacy-modal').classList.add('hidden')" class="rounded-full p-1.5 text-slate transition-colors hover:bg-white/5 hover:text-cream">
+          <i data-lucide="x" class="h-5 w-5"></i>
+        </button>
+      </div>
+      <div class="p-5 sm:p-6 text-sm text-slate space-y-4">
+        <p>A <strong>Lifema Seguros</strong> está comprometida em proteger a sua privacidade. Esta política explica como coletamos, usamos e protegemos suas informações pessoais.</p>
+        <h3 class="text-base font-bold text-cream mt-6">1. Coleta de Informações</h3>
+        <p>Coletamos informações que você nos fornece diretamente ao preencher nossos formulários de contato ou cotação, como nome, e-mail, telefone e tipo de seguro desejado.</p>
+        <h3 class="text-base font-bold text-cream mt-6">2. Uso das Informações</h3>
+        <p>As informações coletadas são utilizadas exclusivamente para entender suas necessidades, entrar em contato para fornecer cotações e melhorar nosso atendimento.</p>
+        <h3 class="text-base font-bold text-cream mt-6">3. Compartilhamento</h3>
+        <p>Não vendemos ou alugamos suas informações pessoais. Podemos compartilhar dados apenas com seguradoras parceiras com o propósito exclusivo de realizar as cotações solicitadas por você.</p>
+        <h3 class="text-base font-bold text-cream mt-6">4. Segurança</h3>
+        <p>Adotamos medidas de segurança adequadas para proteger contra acesso não autorizado, alteração ou destruição de suas informações pessoais.</p>
+        <h3 class="text-base font-bold text-cream mt-6">5. Direitos do Usuário</h3>
+        <p>Você tem o direito de solicitar o acesso, a correção ou a exclusão dos seus dados pessoais a qualquer momento entrando em contato conosco.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Terms Modal -->
+  <div id="terms-modal" class="fixed inset-0 z-50 flex items-center justify-center px-4 hidden">
+    <div class="fixed inset-0 bg-black/80 backdrop-blur-sm" onclick="this.parentElement.classList.add('hidden')"></div>
+    <div class="relative w-full max-w-2xl max-h-[85vh] overflow-y-auto rounded-xl border border-white/10 bg-navy-light shadow-2xl">
+      <div class="sticky top-0 z-10 flex items-center justify-between border-b border-white/10 bg-navy-light/90 px-5 py-4 backdrop-blur-md">
+        <h2 class="font-display text-lg font-bold text-cream">Termos de Uso</h2>
+        <button onclick="document.getElementById('terms-modal').classList.add('hidden')" class="rounded-full p-1.5 text-slate transition-colors hover:bg-white/5 hover:text-cream">
+          <i data-lucide="x" class="h-5 w-5"></i>
+        </button>
+      </div>
+      <div class="p-5 sm:p-6 text-sm text-slate space-y-4">
+        <p>Bem-vindo ao site da <strong>Lifema Seguros</strong>. Ao acessar e usar este site, você concorda com os seguintes termos e condições:</p>
+        <h3 class="text-base font-bold text-cream mt-6">1. Aceitação dos Termos</h3>
+        <p>Ao utilizar nosso site, você reconhece que leu e compreendeu estes Termos de Uso e concorda em cumpri-los.</p>
+        <h3 class="text-base font-bold text-cream mt-6">2. Serviços de Corretagem</h3>
+        <p>O site visa fornecer informações sobre seguros e permitir solicitações de cotação. A contratação efetiva de qualquer apólice dependerá da análise de risco e aceitação por parte da seguradora correspondente.</p>
+        <h3 class="text-base font-bold text-cream mt-6">3. Propriedade Intelectual</h3>
+        <p>Todo o conteúdo, logotipos, textos, gráficos e design do site são de propriedade da Lifema Seguros ou estão licenciados para ela. O uso não autorizado é proibido.</p>
+        <h3 class="text-base font-bold text-cream mt-6">4. Exatidão das Informações</h3>
+        <p>Esforçamo-nos para manter o conteúdo do site atualizado e correto, mas não garantimos a ausência de erros ou omissões. Condições e coberturas de seguros podem mudar sem aviso prévio.</p>
+        <h3 class="text-base font-bold text-cream mt-6">5. Limitação de Responsabilidade</h3>
+        <p>A Lifema Seguros não será responsável por quaisquer danos diretos ou indiretos decorrentes do uso ou da impossibilidade de uso deste site.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="js/blog-data.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Parse query params
+      const urlParams = new URLSearchParams(window.location.search);
+      const slug = urlParams.get('slug');
+      
+      const elLoading = document.getElementById('post-loading');
+      const elNotFound = document.getElementById('post-not-found');
+      const elContent = document.getElementById('post-content');
+      
+      if (!slug || typeof blogPosts === 'undefined') {
+        elLoading.classList.add('hidden');
+        elNotFound.classList.remove('hidden');
+        return;
+      }
+      
+      const post = blogPosts.find(p => p.slug === slug);
+      
+      if (!post) {
+        elLoading.classList.add('hidden');
+        elNotFound.classList.remove('hidden');
+        return;
+      }
+      
+      // Populate template
+      document.title = `${post.title} | Blog | Lifema Seguros`;
+      
+      document.getElementById('post-cover').src = post.coverImage;
+      document.getElementById('post-cover').alt = post.title;
+      document.getElementById('post-category').textContent = post.category;
+      document.getElementById('post-date').textContent = post.date;
+      document.getElementById('post-readtime').textContent = post.readTime;
+      document.getElementById('post-title').textContent = post.title;
+      document.getElementById('post-excerpt').textContent = post.excerpt;
+      document.getElementById('post-author').textContent = post.author.name;
+      document.getElementById('post-role').textContent = post.author.role;
+      
+      // Setup HTML body safely
+      document.getElementById('post-body').innerHTML = post.content;
+      
+      // Re-init lucide icons that might be in the body
+      lucide.createIcons();
+      
+      // Show content
+      elLoading.classList.add('hidden');
+      elContent.classList.remove('hidden');
+    });
+  </script>
+</body>
+</html>

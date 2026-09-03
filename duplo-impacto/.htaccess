@@ -1,0 +1,8 @@
+# Ocultar arquivos confidenciais do servidor web
+<FilesMatch "^\.env|env\.php|config\.php|.*\.bak|.*\.zip|.*\.old|.*\.backup|.*\.log$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Impedir listagem de diretórios
+Options -Indexes

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Duplo Impacto - Alta Performance</title>
+    <meta name="description"
+        content="Artigos, insights e novidades sobre liderança, cultura e desenvolvimento de equipes corporativas.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css?v=2">
+
+    <!-- GSAP for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" async defer></script>
+
+    <!-- Config JS -->
+    <script src="config.js?v=2" defer></script>
+
+    <!-- Custom JS -->
+    <script src="script.js?v=2" defer></script>
+</head>
+
+<body class="page-blog">
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="Duplo Impacto Logo" class="logo-img">
+            </a>
+            <nav class="nav-links">
+                <a href="index.html#posicionamento" class="nav-link">Quem Somos</a>
+                <a href="index.html#treinamentos" class="nav-link">Nossas Soluções</a>
+                <a href="index.html#metodologia" class="nav-link">Metodologia</a>
+                <a href="blog.html" class="nav-link active">Blog</a>
+            </nav>
+            <a href="index.html#contato" class="btn btn-outline nav-cta">Fale Conosco</a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header" id="hero">
+            <div class="page-header-bg parallax-bg"
+                style="background-image: url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=1920');">
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="container page-header-content center">
+                <h1 class="hero-title reveal-text">Insights & <span class="text-gold">Resultados</span></h1>
+                <p class="hero-subtitle reveal-text fade-in-up" style="margin-inline: auto;">Acesse nossos artigos sobre
+                    liderança de elite, cultura corporativa e desenvolvimento humano.</p>
+            </div>
+        </section>
+
+        <!-- Blog Grid -->
+        <section class="section blog-section" id="blog-posts">
+            <div class="container">
+                <div class="blog-grid">
+
+                    <!-- Post 1 -->
+                    <article class="blog-card fade-in-up">
+                        <div class="blog-card-img">
+                            <img src="https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=600"
+                                alt="Equipe em reunião">
+                        </div>
+                        <div class="blog-card-content">
+                            <span class="blog-category text-gold">Liderança</span>
+                            <h3 class="blog-title"><a href="blog/o-fim-das-equipes-medianas.html">O Fim das Equipes
+                                    Medianas: Como a Alta Performance Transforma Empresas</a></h3>
+                            <p class="blog-excerpt">Descubra os três pilares fundamentais que separam as equipes que
+                                apenas cumprem metas daquelas que as destroem.</p>
+                            <div class="blog-meta">
+                                <span>20 Ago, 2026</span>
+                                <a href="blog/o-fim-das-equipes-medianas.html" class="blog-read-more">Ler Artigo →</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Post 2 -->
+                    <article class="blog-card fade-in-up" style="transition-delay: 0.1s;">
+                        <div class="blog-card-img">
+                            <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=600"
+                                alt="Homem analisando gráficos">
+                        </div>
+                        <div class="blog-card-content">
+                            <span class="blog-category text-gold">Cultura</span>
+                            <h3 class="blog-title"><a href="blog/alinhamento-cultural.html">Alinhamento Cultural: O
+                                    Ingrediente Secreto para a Retenção de Talentos</a></h3>
+                            <p class="blog-excerpt">Seus melhores funcionários não pedem demissão da empresa, eles pedem
+                                demissão da cultura e dos líderes diretos.</p>
+                            <div class="blog-meta">
+                                <span>15 Ago, 2026</span>
+                                <a href="blog/alinhamento-cultural.html" class="blog-read-more">Ler Artigo →</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Post 3 -->
+                    <article class="blog-card fade-in-up" style="transition-delay: 0.2s;">
+                        <div class="blog-card-img">
+                            <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&q=80&w=600"
+                                alt="Liderança de equipes">
+                        </div>
+                        <div class="blog-card-content">
+                            <span class="blog-category text-gold">Comunicação</span>
+                            <h3 class="blog-title"><a href="blog/eliminando-ruidos.html">Eliminando Ruídos: Comunicação
+                                    Assertiva no Ambiente Corporativo</a></h3>
+                            <p class="blog-excerpt">Por que tantos projetos fracassam? A resposta quase sempre reside na
+                                qualidade da comunicação interna.</p>
+                            <div class="blog-meta">
+                                <span>02 Ago, 2026</span>
+                                <a href="blog/eliminando-ruidos.html" class="blog-read-more">Ler Artigo →</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Post 4 -->
+                    <article class="blog-card fade-in-up">
+                        <div class="blog-card-img">
+                            <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=600"
+                                alt="Feedback não trabalho">
+                        </div>
+                        <div class="blog-card-content">
+                            <span class="blog-category text-gold">Liderança</span>
+                            <h3 class="blog-title"><a href="blog/feedback-alto-impacto.html">Feedback de Alto Impacto:
+                                    Como Criticar Sem Desmotivar</a></h3>
+                            <p class="blog-excerpt">Entenda como transformar o momento do feedback em uma ferramenta
+                                poderosa de desenvolvimento e confiança.</p>
+                            <div class="blog-meta">
+                                <span>28 Jul, 2026</span>
+                                <a href="blog/feedback-alto-impacto.html" class="blog-read-more">Ler Artigo →</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Post 5 -->
+                    <article class="blog-card fade-in-up" style="transition-delay: 0.1s;">
+                        <div class="blog-card-img">
+                            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=600"
+                                alt="Silos de trabalho">
+                        </div>
+                        <div class="blog-card-content">
+                            <span class="blog-category text-gold">Cultura</span>
+                            <h3 class="blog-title"><a href="blog/silos-corporativos.html">Silos Corporativos: O Inimigo
+                                    Invisível da Produtividade</a></h3>
+                            <p class="blog-excerpt">Descubra como os silos departamentais destroem o valor da sua
+                                empresa e como derrubá-los.</p>
+                            <div class="blog-meta">
+                                <span>14 Jul, 2026</span>
+                                <a href="blog/silos-corporativos.html" class="blog-read-more">Ler Artigo →</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Post 6 -->
+                    <article class="blog-card fade-in-up" style="transition-delay: 0.2s;">
+                        <div class="blog-card-img">
+                            <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80&w=600"
+                                alt="Accountability extrema">
+                        </div>
+                        <div class="blog-card-content">
+                            <span class="blog-category text-gold">Mindset</span>
+                            <h3 class="blog-title"><a href="blog/ciencia-responsabilidade-extrema.html">A Ciência da
+                                    Responsabilidade Extrema (Accountability)</a></h3>
+                            <p class="blog-excerpt">O conceito revolucionário que transforma vitimismo em ação
+                                direcionada para resultados.</p>
+                            <div class="blog-meta">
+                                <span>05 Jul, 2026</span>
+                                <a href="blog/ciencia-responsabilidade-extrema.html" class="blog-read-more">Ler Artigo
+                                    →</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Post 7 -->
+                    <article class="blog-card fade-in-up">
+                        <div class="blog-card-img">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=600"
+                                alt="Gráficos de ROI">
+                        </div>
+                        <div class="blog-card-content">
+                            <span class="blog-category text-gold">Estratégia</span>
+                            <h3 class="blog-title"><a href="blog/roi-desenvolvimento-humano.html">Treinamento Não é
+                                    Gasto: Como Medir o ROI do Desenvolvimento</a></h3>
+                            <p class="blog-excerpt">Aprenda as métricas essenciais para justificar e acompanhar o
+                                investimento em treinamentos comportamentais.</p>
+                            <div class="blog-meta">
+                                <span>20 Jun, 2026</span>
+                                <a href="blog/roi-desenvolvimento-humano.html" class="blog-read-more">Ler Artigo →</a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA final -->
+        <section class="section cta-final" id="contato" style="margin-top: 4rem;">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Left: Info -->
+                    <div class="contact-info fade-in-left">
+                        <h2 class="cta-title">Transforme sua equipe hoje.</h2>
+                        <p class="cta-subtitle">Preencha o formulário e agende uma reunião de diagnóstico. Nãossa equipe
+                            entrará em contato rapidamente.</p>
+
+                        <div class="contact-details">
+                            <p>
+                                <svg class="contact-icon" viewBox="0 0 24 24">
+                                    <path
+                                        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                                </svg>
+                                <span class="cfg-email cfg-text">Carregando...</span>
+                            </p>
+                            <p>
+                                <svg class="contact-icon" viewBox="0 0 24 24">
+                                    <path
+                                        d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                                </svg>
+                                <span class="cfg-telefone cfg-text">Carregando...</span>
+                            </p>
+                            <p>
+                                <svg class="contact-icon" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                                </svg>
+                                <span class="cfg-endereco">Carregando...</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Right: Form -->
+                    <div class="fade-in-right">
+                        <form id="contact-form" action="" method="POST" class="contact-form">
+                            <input type="hidden" name="_subject" value="Novo contato pelo site - Duplo Impacto">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next" value="">
+                            
+                            <!-- Honeypot -->
+                            <input type="text" name="_gotcha" style="display:none !important" tabindex="-1" autocomplete="off">
+
+                            <div class="form-group">
+                                <input type="text" name="nome" placeholder="Seu Nome Completo" required
+                                    class="form-control">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="email" name="email" placeholder="E-mail Corporativo" required
+                                        class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" name="telefone" placeholder="Telefone / WhatsApp" required
+                                        class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="empresa" placeholder="Nome da Empresa" required
+                                    class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="mensagem" placeholder="Como podemos ajudar sua equipe?" rows="4"
+                                    required class="form-control"></textarea>
+                            </div>
+                            
+                            <div id="cf-turnstile-widget" style="margin-bottom: 15px; display: flex; justify-content: center;"></div>
+                            
+                            <button type="submit" class="btn btn-primary btn-large" style="width: 100%;" disabled id="submit-btn">Aguardando verificação...</button>
+                            <div id="form-message" style="display: none; margin-top: 15px; padding: 15px; border-radius: 8px; text-align: center; font-weight: bold;"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html">
+                        <img src="assets/logo.png" alt="Duplo Impacto" class="footer-logo">
+                    </a>
+                    <p class="footer-desc">Transformando equipes boas em equipes de excelência através de treinamentos
+                        de alta performance.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navegação</h4>
+                    <a href="index.html#hero">Início</a>
+                    <a href="index.html#posicionamento">Sobre Nós</a>
+                    <a href="index.html#treinamentos">Treinamentos</a>
+                    <a href="blog.html">Blog</a>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <p class="cfg-email cfg-text">Carregando...</p>
+                    <p class="cfg-telefone cfg-text">Carregando...</p>
+                    <p class="cfg-endereco">Carregando...</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Duplo Impacto. Todos os direitos reservados.</p>
+                <div class="social-links">
+                    <a href="#" class="cfg-linkedin" aria-label="LinkedIn" target="_blank">In</a>
+                    <a href="#" class="cfg-instagram" aria-label="Instagram" target="_blank">Ig</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+

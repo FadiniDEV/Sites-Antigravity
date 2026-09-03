@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felipe Moraes | Sociedade de Advocacia</title>
+    <meta name="description"
+        content="Especialistas em Direito Empresarial e Societário. Atendimento sofisticado e estratégico para o seu negócio.">
+
+    <!-- Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons: Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css?v=1786980818735">
+</head>
+
+<body>
+    <!-- Float WhatsApp -->
+    <a href="#" target="_blank" class="float-whatsapp" id="btn-whatsapp-float" aria-label="Falar no WhatsApp">
+        <i data-lucide="message-circle"></i>
+    </a>
+
+    <!-- 1. HEADER -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-name">Felipe Moraes</span>
+                <span class="logo-subtitle">Sociedade de Advocacia</span>
+            </a>
+
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html#hero" class="nav-link">Início</a></li>
+                    <li><a href="index.html#areas" class="nav-link">Atuação</a></li>
+                    <li><a href="index.html#diferenciais" class="nav-link">Diferenciais</a></li>
+                    <li><a href="index.html#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="index.html#contato" class="nav-link">Contato</a></li>
+                </ul>
+                <a href="#" target="_blank" class="btn btn-outline btn-sm cta-whatsapp global-wa-link">Falar com
+                    Advogado</a>
+            </nav>
+
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir menu">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- 2. HERO -->
+        <section class="hero" id="hero">
+            <div class="hero-bg" id="hero-parallax"
+                style="background-image: url('assets/images/hero-bg.jpg'); background-size: cover; background-position: center 20%;">
+            </div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="hero-badge hero-anim d-1">Direito Empresarial & Societário</span>
+                    <h1 class="hero-title hero-anim d-2">A precisão que o seu negócio exige.</h1>
+                    <p class="lead hero-anim d-3">Estratégias jurídicas sofisticadas para empresas que buscam segurança,
+                        crescimento e excelência no mercado corporativo.</p>
+                    <div class="hero-actions hero-anim d-4">
+                        <a href="#" target="_blank" class="btn btn-primary global-wa-link">Iniciar Conversa</a>
+                        <a href="#areas" class="btn btn-text">Expertise Jurídica <i data-lucide="arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. ÁREAS DE ATUAÇÃO -->
+        <section class="section bg-darker" id="areas">
+            <div class="container">
+                <div class="reveal-up">
+                    <span class="section-subtitle">Nossa Expertise</span>
+                    <h2 class="section-title">Áreas de Atuação</h2>
+                    <div class="divider"></div>
+                </div>
+
+                <div class="areas-grid">
+                    <a href="artigo-empresarial.html" class="area-card reveal-card">
+                        <div class="area-header">
+                            <span class="area-num">01</span>
+                            <i data-lucide="briefcase" class="area-icon"></i>
+                        </div>
+                        <div class="area-content">
+                            <h3>Direito Empresarial</h3>
+                            <p>Assessoria completa para o dia a dia corporativo, estruturação de negócios e governança.
+                            </p>
+                            <span class="area-cta">Ler artigo <i data-lucide="arrow-right"></i></span>
+                        </div>
+                    </a>
+                    <a href="artigo-societario.html" class="area-card reveal-card">
+                        <div class="area-header">
+                            <span class="area-num">02</span>
+                            <i data-lucide="users" class="area-icon"></i>
+                        </div>
+                        <div class="area-content">
+                            <h3>Direito Societário</h3>
+                            <p>Planejamento, constituição, reestruturação de sociedades e resolução de conflitos entre
+                                sócios.</p>
+                            <span class="area-cta">Ler artigo <i data-lucide="arrow-right"></i></span>
+                        </div>
+                    </a>
+                    <a href="artigo-ma.html" class="area-card reveal-card">
+                        <div class="area-header">
+                            <span class="area-num">03</span>
+                            <i data-lucide="git-merge" class="area-icon"></i>
+                        </div>
+                        <div class="area-content">
+                            <h3>Fusões e Aquisições</h3>
+                            <p>Acompanhamento estratégico em operações de M&A, due diligence e negociações complexas.
+                            </p>
+                            <span class="area-cta">Ler artigo <i data-lucide="arrow-right"></i></span>
+                        </div>
+                    </a>
+                    <a href="artigo-contratual.html" class="area-card reveal-card">
+                        <div class="area-header">
+                            <span class="area-num">04</span>
+                            <i data-lucide="file-signature" class="area-icon"></i>
+                        </div>
+                        <div class="area-content">
+                            <h3>Direito Contratual</h3>
+                            <p>Elaboração e revisão de instrumentos contratuais para conferir máxima segurança às
+                                operações.</p>
+                            <span class="area-cta">Ler artigo <i data-lucide="arrow-right"></i></span>
+                        </div>
+                    </a>
+                    <a href="artigo-contencioso.html" class="area-card reveal-card">
+                        <div class="area-header">
+                            <span class="area-num">05</span>
+                            <i data-lucide="scale" class="area-icon"></i>
+                        </div>
+                        <div class="area-content">
+                            <h3>Contencioso Estratégico</h3>
+                            <p>Representação combativa e técnica em disputas judiciais e arbitrais de alta complexidade.
+                            </p>
+                            <span class="area-cta">Ler artigo <i data-lucide="arrow-right"></i></span>
+                        </div>
+                    </a>
+                    <a href="artigo-compliance.html" class="area-card reveal-card">
+                        <div class="area-header">
+                            <span class="area-num">06</span>
+                            <i data-lucide="shield-check" class="area-icon"></i>
+                        </div>
+                        <div class="area-content">
+                            <h3>Compliance & Proteção</h3>
+                            <p>Estruturação de programas de integridade, mapeamento de riscos legais e auditorias
+                                preventivas.</p>
+                            <span class="area-cta">Ler artigo <i data-lucide="arrow-right"></i></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. BLOCO INSTITUCIONAL (Sticky Scroll) -->
+        <section class="section" id="diferenciais">
+            <div class="container sticky-wrapper">
+                <div class="sticky-container">
+                    <div class="sticky-sidebar reveal-up">
+                        <span class="section-subtitle">Diferenciais</span>
+                        <h2 class="section-title" style="font-size: clamp(2.5rem, 8vw, 4rem); white-space: nowrap;">
+                            Pilares do Escritório</h2>
+                        <div class="divider"></div>
+                        <p class="lead">Entendemos que no ambiente corporativo não há margem para erros.</p>
+                        <a href="#contato" class="btn btn-primary">Agendar Consulta</a>
+                    </div>
+
+                    <div class="sticky-content">
+                        <div class="pilar-block active" data-step="1">
+                            <span class="pilar-number">01</span>
+                            <h3>Visão de Negócio</h3>
+                            <p>Nossa abordagem une técnica jurídica a uma profunda compreensão do ambiente de negócios.
+                                Solucionamos questões legais sem travar as operações comerciais da sua empresa.</p>
+                        </div>
+                        <div class="pilar-block" data-step="2">
+                            <span class="pilar-number">02</span>
+                            <h3>Estratégia Jurídica</h3>
+                            <p>Desenhamos soluções não apenas para apagar incêndios, mas para prevenir riscos e gerar
+                                valor de longo prazo, pavimentando o caminho para o crescimento seguro.</p>
+                        </div>
+                        <div class="pilar-block" data-step="3">
+                            <span class="pilar-number">03</span>
+                            <h3>Atendimento Exclusivo</h3>
+                            <p>Dedicamos tempo para compreender a cultura e os objetivos de cada cliente de forma
+                                artesanal. Você fala diretamente com os sócios que decidem.</p>
+                        </div>
+                        <div class="pilar-block" data-step="4">
+                            <span class="pilar-number">04</span>
+                            <h3>Discrição Absoluta</h3>
+                            <p>Atuamos sob rigoroso sigilo, garantindo a proteção incondicional da reputação e das
+                                informações estratégicas de nossos parceiros.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. SOBRE O ADVOGADO -->
+        <section class="section bg-darker" id="sobre">
+            <div class="container">
+                <div class="sobre-layout">
+                    <div class="sobre-text reveal-up">
+                        <span class="section-subtitle">O Fundador</span>
+                        <h2 class="section-title">Compromisso inegociável com o resultado.</h2>
+                        <div class="divider full"></div>
+                        <p>Fundado por Felipe Moraes, o escritório consolida anos de atuação em causas de alta
+                            complexidade. Nossa boutique jurídica foi desenhada para atender a um seleto grupo de
+                            empresas, entregando soluções que exigem sofisticação artesanal aliada a uma execução
+                            implacável.</p>
+                        <p>Nosso foco é atuar não apenas como operadores do direito, mas como verdadeiros conselheiros
+                            estratégicos para a alta gestão.</p>
+
+                        <div class="stats-row">
+                            <div class="stat-item">
+                                <div style="display: flex; align-items: baseline;">
+                                    <span class="stat-number" data-target="15">0</span>
+                                    <span class="stat-suffix"
+                                        style="font-size: 3.5rem; font-weight: 300; color: var(--accent);">+</span>
+                                </div>
+                                <span class="stat-label">Anos de experiência</span>
+                            </div>
+                            <div class="stat-item">
+                                <div style="display: flex; align-items: baseline;">
+                                    <span class="stat-number" data-target="500">0</span>
+                                    <span class="stat-suffix"
+                                        style="font-size: 3.5rem; font-weight: 300; color: var(--accent);">M</span>
+                                </div>
+                                <span class="stat-label">Volume de operações</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sobre-images reveal-img" id="sobre-image-slider">
+                        <div class="img-wrapper front">
+                            <img src="assets/images/portrait.jpg" alt="Felipe Moraes">
+                        </div>
+                        <div class="img-wrapper back">
+                            <img src="assets/images/office.jpg" alt="Escritório">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. BLOG PREVIEW -->
+        <section class="section">
+            <div class="container">
+                <div class="reveal-up"
+                    style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 3rem;">
+                    <div>
+                        <span class="section-subtitle">Knowledge</span>
+                        <h2 class="section-title" style="margin-bottom: 0; font-size: clamp(1.5rem, 5vw, 3.5rem);">
+                            Últimas Publicações</h2>
+                    </div>
+                    <a href="blog.html" class="btn btn-text hidden-mobile">Ver todos os artigos <i
+                            data-lucide="arrow-right"></i></a>
+                </div>
+
+                <div class="blog-grid reveal-up reveal-delay-1">
+                    <a href="artigo-empresarial.html" class="blog-card">
+                        <div class="blog-img-wrapper">
+                            <img src="assets/images/blog/empresarial.jpg" alt="Artigo Empresarial">
+                        </div>
+                        <div class="blog-meta">
+                            <span class="blog-cat">Empresarial</span>
+                            <span>•</span>
+                            <span>5 min leitura</span>
+                        </div>
+                        <h3>Como decisões jurídicas estratégicas protegem o crescimento</h3>
+                    </a>
+                    <a href="artigo-societario.html" class="blog-card">
+                        <div class="blog-img-wrapper">
+                            <img src="assets/images/blog/societario.jpg" alt="Artigo Societário">
+                        </div>
+                        <div class="blog-meta">
+                            <span class="blog-cat">Societário</span>
+                            <span>•</span>
+                            <span>6 min leitura</span>
+                        </div>
+                        <h3>Governança societária: como prevenir conflitos de sócios</h3>
+                    </a>
+                    <a href="artigo-ma.html" class="blog-card">
+                        <div class="blog-img-wrapper">
+                            <img src="assets/images/blog/ma.jpg" alt="Artigo M&A">
+                        </div>
+                        <div class="blog-meta">
+                            <span class="blog-cat">Fusões e Aquisições</span>
+                            <span>•</span>
+                            <span>8 min leitura</span>
+                        </div>
+                        <h3>Os pontos jurídicos cruciais antes de uma operação de M&A</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. CTA FINAL & FORMULÁRIO -->
+        <section class="section" id="contato"
+            style="padding: 8rem 0; border-top: 1px solid var(--border-subtle); background-color: #080808;">
+            <div class="container">
+                <div class="contact-layout">
+                    <div class="contact-info reveal-up">
+                        <span class="section-subtitle">Consultoria Jurídica</span>
+                        <h2 class="section-title">Sua empresa precisa de retaguarda de excelência?</h2>
+                        <div class="divider"></div>
+                        <p
+                            style="font-size: 1.1rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 3rem; max-width: 90%;">
+                            Agende uma reunião estratégica e descubra como podemos proteger e impulsionar seus negócios
+                            de forma segura e confidencial.</p>
+
+                        <div style="display: flex; flex-direction: column; gap: 2rem;">
+                            <div>
+                                <h4 style="color: #fff; margin-bottom: 0.5rem; font-size: 1.2rem; font-weight: 400;">
+                                    Fale Direto</h4>
+                                <a href="#" target="_blank" class="btn btn-primary global-wa-link">Iniciar via
+                                    WhatsApp</a>
+                            </div>
+                            <div>
+                                <h4 style="color: #fff; margin-bottom: 0.5rem; font-size: 1.2rem; font-weight: 400;">
+                                    Endereço</h4>
+                                <p style="color: var(--text-secondary);">Av. Faria Lima, 3000 - 15º Andar<br>Itaim Bibi,
+                                    São Paulo - SP</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper reveal-card" style="transition-delay: 0.2s;">
+                        <form class="premium-form" id="contact-form">
+                            <h3 style="color: #fff; margin-bottom: 3rem; font-weight: 400; font-size: 1.8rem;">Enviar
+                                Mensagem</h3>
+                            <div class="form-group">
+                                <input type="text" id="nome" required placeholder=" ">
+                                <label for="nome">Nome Completo</label>
+                                <div class="form-line"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" required placeholder=" ">
+                                <label for="email">E-mail Corporativo</label>
+                                <div class="form-line"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="telefone" required placeholder=" ">
+                                <label for="telefone">Telefone / WhatsApp</label>
+                                <div class="form-line"></div>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="mensagem" rows="3" required placeholder=" "></textarea>
+                                <label for="mensagem">Como podemos ajudar?</label>
+                                <div class="form-line"></div>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">
+                                Enviar Solicitação <i data-lucide="send" style="width: 16px;"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 8. FOOTER -->
+    <footer class="footer bg-darker">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo" style="margin-bottom: 2rem;">
+                        <span class="logo-name">Felipe Moraes</span>
+                        <span class="logo-subtitle">Sociedade de Advocacia</span>
+                    </a>
+                    <p>Av. Faria Lima, 3000 - 15º Andar<br>Itaim Bibi, São Paulo - SP</p>
+                    <p style="margin-top: 1rem; color: var(--accent);">contato@felipemoraes.adv.br</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Navegação</h4>
+                    <div class="footer-links">
+                        <a href="index.html">Início</a>
+                        <a href="index.html/#areas">Áreas de Atuação</a>
+                        <a href="index.html/#diferenciais">Nossos Pilares</a>
+                        <a href="index.html/#sobre">Sobre o Escritório</a>
+                        <a href="blog.html">Blog</a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Áreas</h4>
+                    <div class="footer-links">
+                        <a href="artigo-empresarial.html">Empresarial</a>
+                        <a href="artigo-societario.html">Societário</a>
+                        <a href="artigo-ma.html">Fusões & Aquisições</a>
+                        <a href="artigo-contratual.html">Contratual</a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Social</h4>
+                    <div class="footer-links" style="flex-direction: row; gap: 1.5rem;">
+                        <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider full"></div>
+            <div style="display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--text-muted);">
+                <p>&copy; 2026 Felipe Moraes. Todos os direitos reservados.</p>
+                <p>OAB/SP 123.456</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>lucide.createIcons();</script>
+    <script src="script.js"></script>
+</body>
+
+</html>

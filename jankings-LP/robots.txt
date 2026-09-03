@@ -1,0 +1,5 @@
+# Robots.txt - Jankings
+User-agent: *
+Allow: /
+
+Sitemap: sitemap.xml
